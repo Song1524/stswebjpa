@@ -1,0 +1,50 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2025-09-10T09:20:36.801+09:00  INFO 4802 --- [           main] kr.goodee.StswebjpaApplication           : Starting StswebjpaApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 4802 (/home/zsdx1524/stswebjpa/target/stswebjpa-0.0.1-SNAPSHOT.jar started by root in /home/zsdx1524/stswebjpa)
+2025-09-10T09:20:36.812+09:00  INFO 4802 --- [           main] kr.goodee.StswebjpaApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-09-10T09:20:37.958+09:00  INFO 4802 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-10T09:20:38.074+09:00  INFO 4802 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2025-09-10T09:20:38.943+09:00  INFO 4802 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2025-09-10T09:20:38.962+09:00  INFO 4802 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-10T09:20:38.962+09:00  INFO 4802 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-09-10T09:20:39.042+09:00  INFO 4802 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-10T09:20:39.043+09:00  INFO 4802 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2125 ms
+2025-09-10T09:20:39.339+09:00  INFO 4802 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-10T09:20:39.423+09:00  INFO 4802 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-09-10T09:20:39.498+09:00  INFO 4802 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-10T09:20:40.344+09:00  INFO 4802 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-10T09:20:40.375+09:00  INFO 4802 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-10T09:20:40.575+09:00  INFO 4802 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@44faa4f2
+2025-09-10T09:20:40.576+09:00  INFO 4802 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-10T09:20:42.009+09:00  INFO 4802 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-10T09:20:42.219+09:00  INFO 4802 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10T09:20:42.824+09:00  WARN 4802 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-10T09:20:43.844+09:00  WARN 4802 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-10T09:20:43.845+09:00  INFO 4802 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-10T09:20:43.847+09:00  INFO 4802 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-10T09:20:43.851+09:00  INFO 4802 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-10T09:20:43.894+09:00  INFO 4802 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-10T09:20:43.963+09:00 ERROR 4802 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
